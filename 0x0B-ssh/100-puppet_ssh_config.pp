@@ -5,9 +5,9 @@ file { 'ect/ssh/ssh_config':
              ensure  => present,
 
 content =>"
-             #ssh clint configuration
-             host*
-             IdentityFile ~/.ssh/school
-             PasswordAuthentication no
-             ",
+#ssh clint configuration
+host*
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
+",
 }
