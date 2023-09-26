@@ -4,7 +4,7 @@
 file {'ect/ssh/ssh_config':
 ensure  => present,
 content =>"
-#ssh clint configuration
+#ssh client configuration
 host*
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
