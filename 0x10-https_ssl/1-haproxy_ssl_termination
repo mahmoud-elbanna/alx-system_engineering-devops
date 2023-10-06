@@ -40,6 +40,7 @@ frontend  elbanna_frontend
         redirect scheme https if !{ ssl_fc }
         mode http
         default_backend elbanna_backend
+
 backend elbanna_backend
         balance roundrobin
         server 345792-web-01 34.232.52.68:80 check
